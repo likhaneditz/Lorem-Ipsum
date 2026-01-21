@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator - Free Text Placeholder Tool</title>
+    <meta name="description" content="Generate free Lorem Ipsum placeholder text for web design, graphic design, and publishing. Customizable paragraphs and word counts.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Lorem<span>Gen</span></a>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Lorem Ipsum Generator</h1>
+            <p>The standard placeholder text used by designers, printers, and editors. Generate content efficiently for your mockups.</p>
+            <a href="#generator" class="cta-button">Start Generating</a>
+        </div>
+    </section>
+
+    <!-- Tool Section -->
+    <section id="generator" class="tool-section">
+        <div class="container">
+            <div class="tool-card">
+                <div class="tool-controls">
+                    <div class="control-group">
+                        <label for="amount">Quantity:</label>
+                        <input type="number" id="amount" value="3" min="1" max="100">
+                    </div>
+                    <div class="control-group">
+                        <label for="type">Type:</label>
+                        <select id="type">
+                            <option value="paragraphs">Paragraphs</option>
+                            <option value="words">Words</option>
+                            <option value="sentences">Sentences</option>
+                        </select>
+                    </div>
+                    <button id="generate-btn" class="primary-btn">Generate Text</button>
+                </div>
+
+                <div class="output-wrapper">
+                    <div class="output-header">
+                        <span>Generated Text</span>
+                        <button id="copy-btn" class="secondary-btn">Copy to Clipboard</button>
+                    </div>
+                    <textarea id="output-text" readonly placeholder="Your text will appear here..."></textarea>
+                    <div id="copy-message" class="toast">Copied!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">What is Lorem Ipsum?</button>
+                    <div class="accordion-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Why do we use it?</button>
+                    <div class="accordion-content">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Where does it come from?</button>
+                    <div class="accordion-content">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Is this generator free?</button>
+                    <div class="accordion-content">
+                        <p>Yes, this tool is completely free to use for personal and commercial projects. No attribution is required.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+            <p class="copyright">&copy; 2023 LoremGen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
